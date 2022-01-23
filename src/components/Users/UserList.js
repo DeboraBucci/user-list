@@ -4,7 +4,7 @@ import classes from "./UserList.module.css";
 
 const UserList = ({ users = [] }) => {
   return (
-    <Card className={classes.user}>
+    <Card className={classes.users}>
       <ul>
         {users.map(({ name, age, key = Math.random() }) => (
           <li key={key}>
