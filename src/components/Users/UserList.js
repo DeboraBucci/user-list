@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../UI/Card";
 import classes from "./UserList.module.css";
 
-const UserList = ({ users }) => {
+const UserList = ({ users = [] }) => {
   return (
     <Card className={classes.user}>
       <ul>
