@@ -6,8 +6,8 @@ const UserList = ({ users = [] }) => {
   return (
     <Card className={classes.user}>
       <ul>
-        {users.map(({ name, age }) => (
-          <li>
+        {users.map(({ name, age, key = Math.random() }) => (
+          <li key={key}>
             {name} ({age} years old)
           </li>
         ))}
