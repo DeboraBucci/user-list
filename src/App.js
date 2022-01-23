@@ -3,10 +3,12 @@ import AddUser from "./components/Users/AddUser";
 import UserList from "./components/Users/UserList";
 
 function App() {
+  const [usersList, setUserList] = useState([]);
+
   return (
     <div>
       <AddUser />
-      <UserList />
+      <UserList users={usersList} />
     </div>
   );
 }
