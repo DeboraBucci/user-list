@@ -13,7 +13,7 @@ const AddUser = ({ onAddUser }) => {
     if (enteredUsername.trim().length === 0 || enteredAge.trim().length === 0)
       return;
 
-    if (+enteredAge < 0) return;
+    if (+enteredAge < 1) return;
 
     onAddUser(enteredUsername, enteredAge);
     setEnteredUsername("");
